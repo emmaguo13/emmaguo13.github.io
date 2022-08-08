@@ -106,11 +106,13 @@ a:hover {
   align-items: center;
 }
 
-#home-hello {
-  font-size: 30px;
+#home-right {
+  font-size: 15px;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 300;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 #home-image {
@@ -127,13 +129,15 @@ a:hover {
   opacity: 50%;
 }
 
-#home-text {
+#home-left {
   white-space: nowrap;
   opacity: 80%;
   color: #39ff14;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.75px;
+  display: flex;
+  flex-direction: column;
 }
 
 #about {
