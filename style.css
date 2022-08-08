@@ -27,6 +27,11 @@ footer {
   width: 500px;
 }
 
+img {
+  position: relative;
+  width: 30%;
+}
+
 #media {
   position: relative;
   margin-top: 25px;
