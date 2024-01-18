@@ -1,12 +1,19 @@
 html,
 body {
-  height: 100%;
-  width: 65%;
+  display: block;
+  width: 100%;    
+  height: 120px;
   margin: auto;
   padding: 0;
   scroll-behavior: smooth;
-  overflow: hidden;
-  padding-top: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+
+#main {
+  width: 50%;
+  margin: auto;
 }
 
 header {
@@ -178,7 +185,7 @@ a:hover {
   opacity: 50%;
 } */
 
-#about {
+.about {
   height: auto;
   width:100%;
   position: relative;
@@ -190,6 +197,7 @@ a:hover {
   /* background-color: red; */
 }
 
+
 #about-title {
   width: 500px;
   font-size: 30px;
@@ -197,7 +205,7 @@ a:hover {
   color: black;
 }
 
-#about-text {
+.about-text {
   width: 100%;
   justify-content: center;
   font-size: 15px;
@@ -213,7 +221,7 @@ a:hover {
 }
 
 /* not used */
-#about-text a:hover {
+.about-text a:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 -2 20 8'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift 1s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='3' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: bottom;
   background-repeat: repeat-x;
@@ -223,7 +231,7 @@ a:hover {
   text-decoration: none;
 }
 
-#about-text li {
+.about-text li {
   font-size: 15px;
   margin: 0px;
 }
