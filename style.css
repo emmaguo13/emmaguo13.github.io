@@ -448,6 +448,40 @@ i:hover {
   }
 }
 
+/* Specific media query for iPhone 16 and similar modern iPhones */
+@media only screen and (max-width: 430px) {
+  #main {
+    width: 92%;
+    padding: 0 12px;
+  }
+  
+  #home {
+    padding-top: 22px;
+  }
+  
+  .nav-link {
+    padding: 14px;
+    margin-right: 10px;
+  }
+  
+  .about {
+    padding-top: 3px;
+  }
+  
+  #projects {
+    padding-top: 12px;
+  }
+  
+  #home-left {
+    gap: 9px;
+    font-size: 14px;
+  }
+  
+  #home-right {
+    font-size: 10px;
+  }
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
