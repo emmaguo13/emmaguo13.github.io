@@ -140,6 +140,7 @@ a:hover {
   margin: 0px;
   padding: 0px;
   position: relative;
+  align-self: flex-start;
 }
 
 #home-left {
@@ -155,7 +156,7 @@ a:hover {
   gap: 10px;
   padding:0px;
   position: relative;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 #home-text {
@@ -392,6 +393,58 @@ i:hover {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main {
+    width: 80%;
+    padding: 0 20px;
+  }
+  
+  #home {
+    padding-top: 30px;
+  }
+  
+  .nav-link {
+    padding: 18px;
+    margin-right: 18px;
+  }
+  
+  .about {
+    padding-top: 8px;
+  }
+  
+  #projects {
+    padding-top: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #main {
+    width: 90%;
+    padding: 0 15px;
+  }
+  
+  #home {
+    padding-top: 25px;
+  }
+  
+  .nav-link {
+    padding: 15px;
+    margin-right: 12px;
+  }
+  
+  .about {
+    padding-top: 5px;
+  }
+  
+  #projects {
+    padding-top: 15px;
+  }
+  
+  #home-left {
+    gap: 10px;
   }
 }
 
