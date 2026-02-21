@@ -15,16 +15,16 @@ body {
   width: 44%;
   max-width: 560px;
   margin: 0 auto;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0;
+  justify-content: flex-start;
+  padding: 24px 0 0 0;
   transform: translateY(-15px);
+  box-sizing: border-box;
 }
 
 header {
-  margin-top: -18px;
   width: 100%;
   height: 40px;
   display: flex;
@@ -72,7 +72,7 @@ body {
 }
 
 #header {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -194,15 +194,16 @@ a:hover {
 } */
 
 .about {
-  height: auto;
-  width:100%;
-  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
-  margin:auto;
-  /* background-color: red; */
+  align-items: stretch;
+  position: relative;
 }
 
 
@@ -268,17 +269,27 @@ a:hover {
 }
 
 #project-wrapper {
-  margin: 0px;
-  padding:0px;
-  margin-top:-15px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 #projects {
+  flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  margin: 0px;
-  padding: 0px;
-  padding-top: 20px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#projects-title {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
 }
 
 /* #projects-title p {
@@ -299,19 +310,31 @@ a:hover {
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  width: 100%;
 }
 
 .project-item {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 165px 1fr;
   column-gap: 24px;
-  align-items: baseline;
+  align-items: start;
+  width: 100%;
+  min-width: 0;
 }
 
 .project-name,
 .project-desc {
-  margin: 0px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 0;
+}
+
+.project-name {
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .project-name a {
@@ -321,8 +344,18 @@ a:hover {
 
 .project-name a:hover {
   text-decoration: underline;
-  text-decoration-style:wavy;
-  color:black;
+  text-decoration-style: wavy;
+  color: black;
+}
+
+.project-desc a {
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-desc a:hover {
+  color: #BA889E;
 }
 
 /* .project {
@@ -388,7 +421,7 @@ i:hover {
 @media only screen and (max-width: 768px) {
   #main {
     width: 100%;
-    padding: 0 24px;
+    padding: 24px 24px 0 24px;
   }
   
   #home {
@@ -405,15 +438,11 @@ i:hover {
   }
   
   #projects {
-    padding-top: 24px;
-  }
-
-  #project-wrapper {
-    margin-top: 0px;
+    padding-top: 12px;
   }
 
   .project-list {
-    gap: 18px;
+    gap: 12px;
   }
 
   .project-item {
@@ -425,7 +454,7 @@ i:hover {
 @media only screen and (max-width: 480px) {
   #main {
     width: 90%;
-    padding: 0 15px;
+    padding: 24px 15px 0 15px;
   }
   
   #home {
@@ -438,11 +467,11 @@ i:hover {
   }
   
   .about {
-    padding-top: 5px;
+    padding-top: 8px;
   }
   
   #projects {
-    padding-top: 15px;
+    padding-top: 8px;
   }
   
   #home-left {
@@ -454,7 +483,7 @@ i:hover {
 @media only screen and (max-width: 430px) {
   #main {
     width: 95%;
-    padding: 0 8px;
+    padding: 20px 8px 0 8px;
   }
   
   #home {
@@ -467,11 +496,11 @@ i:hover {
   }
   
   .about {
-    padding-top: 0px;
+    padding-top: 6px;
   }
   
   #projects {
-    padding-top: 8px;
+    padding-top: 6px;
   }
   
   #home-left {
@@ -488,7 +517,7 @@ i:hover {
 @media only screen and (max-width: 393px) {
   #main {
     width: 96%;
-    padding: 0 5px;
+    padding: 16px 5px 0 5px;
   }
   
   #home {
@@ -501,11 +530,11 @@ i:hover {
   }
   
   .about {
-    padding-top: 0px;
+    padding-top: 4px;
   }
   
   #projects {
-    padding-top: 5px;
+    padding-top: 4px;
   }
   
   #home-left {
